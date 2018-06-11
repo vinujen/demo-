@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Kevellcorp</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+       
+      <div class="container main-wrapper">
+         <div class="row">
+            <div class="col-lg-5  col-sm-12 col-xs-12 float-wraper">
+               <aside>
+                  <section class="findstore-panel">
+                     <h5>FIND STORE</h5>
+                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="col-lg-7 col-sm-6 col-md-6 padLft findStore">
+                           <input placeholder="Anaheim CA 92805" type="text" class="form-control input-sm" id="usr">
+                        </div>
+                        <div class="row hidden-lg hidden-sm hidden-md">
+                           <section class="toggle-view">
+                              <div id="list" class="col-xs-4 text-center list-icon active"><i class="firt glyphicon glyphicon-th-list"></i> LIST</div>
+                              <div id="mapDirec" class="col-xs-4 text-center list-map"><i class="glyphicon glyphicon-map-marker"></i> MAP</div>
+                              <div class="text-center">
+                                 <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                       <a id="filter-title" class="mob-filter-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                                       <i class="glyphicon glyphicon-filter"></i> FILTER
+                                       </a>
+                                    </h4>
+                                 </div>
+                                 <div id="collapseOne2" class="panel-collapse col-xs-12 collapse" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                       <form>
+                                          <div class="checkbox">
+                                             <label><input type="checkbox"> Speciality</label>
+                                             <label><input type="checkbox">Factor outlet</label>
+                                             <label><input type="checkbox">authoritzed Retailer</label>
+                                             <label><input type="checkbox">Timberland PRO" Footwear</label>
+                                             <label><input type="checkbox">Timberland PRO" Workwear</label>
+                                          </div>
+                                       </form>
+                                    </div>
+                                 </div>
+                              </div>
+                               <iframe id="gmap_canvas" style="display:none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.7780105993334!2d78.13259551488521!3d9.952419192883786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5e0bd876f89%3A0x566f0a9576e2254e!2sKEVELL+CORP!5e0!3m2!1sen!2sin!4v1527678488705" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                           </section>
+                        </div>
+                        <!--Mob comment-->
+                        <div class="padRgt hidden-xs visible-lg visible-sm visible-md">
+                           <div class="panel-heading panel-list-mob" role="tab" id="headingOne">
+                              <h4 class="panel-title">
+                                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                 Filter by <i class="more-less glyphicon glyphicon-plus pull-right"></i>
+                                 </a>
+                              </h4>
+                           </div>
+                           <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                              <div class="panel-body col-lg-pull-6">
+                                 <form>
+                                    <div class="checkbox">
+                                       <label><input type="checkbox"> Speciality</label>
+                                       <label><input type="checkbox">Factor outlet</label>
+                                       <label><input type="checkbox">authoritzed Retailer</label>
+                                       <label><input type="checkbox">Timberland PRO" Footwear</label>
+                                       <label><input type="checkbox">Timberland PRO" Workwear</label>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                        <!--Mob comment-->                    
+                     </div>
+                  </section>
+                  <section class="location mob-location">
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <div class="warningIcon"><span class="arrow-down"><label>1</label></span> <span>3.19 miles away</span></div>
+                        </div>
+                        <div class="col-lg-12 add-panel">
+                           <address>
+                              <h5>LACATION</h5> 
+                              100 East Washington Avw <br>
+                              city ST 12345<br>
+                              555-555-555<br>
+                           </address>
+                           <ul>
+                              <li><a href="#">Send To phone </a></li>
+                              <li><a class="last" href="#">Send To Email</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <button type="button" class="btn btn-black">Get Direction</button>
+                           <button type="button" class="btn btn-black">More Info</button>
+                        </div>
+                        <div class="col-lg-12">
+                           <button type="button" class="btn btn-yellow">View Store Page</button>
+                        </div>
+                     </div>
+                  </section>
+                  <section class="location mob-location">
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <div class="warningIcon"><span class="arrow-down"><label>2</label></span> <span>1.63 miles away</span></div>
+                        </div>
+                        <div class="col-lg-12 add-panel">
+                           <address>
+                              <h5>LACATION</h5>  
+                              100 East Washington Avw <br>
+                              city ST 12345<br>
+                              555-555-555<br>
+                           </address>
+                           <ul>
+                              <li><a href="#">Send To phone </a></li>
+                              <li><a class="last" href="#">Send To Email</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <button type="button" class="btn btn-black">Get Direction</button>
+                           <button type="button" class="btn btn-black">More Info</button>
+                        </div>
+                     </div>
+                  </section>
+                  <section class="location mob-location">
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <div class="warningIcon"><span class="arw-orange"><label>3</label></span> <span>2.33 miles away</span></div>
+                        </div>
+                        <div class="col-lg-12 add-panel">
+                           <address>
+                              <h5>LACATION</h5> 
+                              100 East Washington Avw <br>
+                              city ST 12345<br>
+                              555-555-555<br>
+                           </address>
+                           <ul>
+                              <li><a href="#">Send To phone </a></li>
+                              <li><a class="last" href="#">Send To Email</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <button type="button" class="btn btn-black">Get Direction</button>
+                           <button type="button" class="btn btn-black">More Info</button>
+                        </div>
+                     </div>
+                  </section>
+               </aside>
+            </div>
+             
+             
+    <!--DESKTOP GOOGLE MAP-->   
+             
+            <div class="col-lg-7 col-sm-12 col-xs-12">
+                <!--<iframe id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.7780105993334!2d78.13259551488521!3d9.952419192883786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5e0bd876f89%3A0x566f0a9576e2254e!2sKEVELL+CORP!5e0!3m2!1sen!2sin!4v1527678488705" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+                <div id="map_wrapper">
+                    <div id="map_canvas" class="mapping"></div>
+                </div>
+            </div>
+     <!--DESKTOP GOOGLE MAP-->
+             
+             
+         
+      </div>
+      <script>
+         function toggleIcon(e) {
+           $(e.target)
+               .prev('.panel-heading')
+               .find(".more-less")
+               .toggleClass('glyphicon-plus glyphicon-minus');
+           }
+           $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+           $('.panel-group').on('shown.bs.collapse', toggleIcon);
+      </script>
+       
+      <script>
+        /* function myMap() {
+         var mapProp= {
+             center:new google.maps.LatLng(51.508742,-0.120850),
+             zoom:5,
+         };
+         var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+         }*/
+     
+           $(document).ready(function(){
+               
+            $("#list").click(function(){
+            $("#gmap_canvas").css("display","none");
+            $("#collapseOne2").css("display","none");
+            $(".mob-location").css("display","block");
+            $("#list").toggleClass("active");
+            $("#filter-title").removeClass("active");
+            $("#mapDirec").removeClass("active");
+        });
+               
+            $("#mapDirec").click(function(){
+            $("#gmap_canvas").toggle("show");
+            $("#mapDirec").toggleClass("active");
+            $("#collapseOne2").css("display","none");
+            $(".mob-location").css("display","none");
+            $("#list").removeClass("active");
+            $("#filter-title").removeClass("active");
+        });
+            
+            $("#headingOne").click(function(){
+            $("#collapseOne2").css("display","block");
+            $("#gmap_canvas").css("display","none");
+            $(".mob-location").css("display","none");
+            $("#filter-title").toggleClass("active");
+            $("#list").removeClass("active");
+            $("#mapDirec").removeClass("active");
+
+        });
+        });
+       </script>
+          
+       <script>
+           jQuery(function($) {
+                // Asynchronously Load the map API 
+                var script = document.createElement('script');
+                script.src = "//maps.googleapis.com/maps/api/js?sensor=false&callback=initialize";
+                document.body.appendChild(script);
+            });
+
+            function initialize() {
+                var map;
+                var bounds = new google.maps.LatLngBounds();
+                var mapOptions = {
+                    mapTypeId: 'roadmap'
+                };
+                
+        
+                    function addMarker(feature) {
+                      var marker = new google.maps.Marker({
+                        icon: icons[feature.type].icon,
+                        map: map
+                      });
+                    }
+
+       
+                
+                // Display a map on the page
+                map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+                map.setTilt(45);
+
+                // Multiple Markers
+                var markers = [
+                    ['London Eye, London', 51.503454,-0.119562],
+                    ['madurai', 40.741895,-73.989308],
+                    ['Tirunelveli', 8.713912600000002,77.75665230000004],
+                    ['Anaheim',40.741895 ,-73.989308]
+                ];
+
+                // Info Window Content
+                var infoWindowContent = [
+                    ['<div class="info_content map-address">' +
+                    '<h4>London Eye</h4>' +
+                    '<p>The London Eye is a giant Ferris wheel situated on the banks of the River Thames. The entire structure is 135 metres (443 ft) tall and the wheel has a diameter of 120 metres (394 ft).</p>' +        
+                    '</div>'],
+                    ['<div class="info_content map-address">' +
+                    '<h4>Madurai</h4>' +
+                    '<p>The Palace of Westminster is the meeting place of the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom. Commonly known as the Houses of Parliament after its tenants.</p>' +
+                    '</div>'],
+                    ['<div class="info_content map-address">' +
+                    '<h4>Tirunelveli</h4>' +
+                    '<p>The Palace of Westminster is the meeting place of the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom. Commonly known as the Houses of Parliament after its tenants.</p>' +
+                    '</div>'],
+                    ['<div class="info_content map-address">' +
+                    '<h4>Anaheim</h4>' +
+                    '<p>The Palace of Westminster is the meeting place of the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom. Commonly known as the Houses of Parliament after its tenants.</p>' +
+                    '</div>']
+                ];
+
+                // Display multiple markers on a map
+                var infoWindow = new google.maps.InfoWindow(), marker, i;
+                var iconBase = './img/';
+                // Loop through our array of markers & place each one on the map  
+                for( i = 0; i < markers.length; i++ ) {
+                    var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+                    bounds.extend(position);
+                    marker = new google.maps.Marker({
+                        position: position,
+                        map: map,
+                        icon: iconBase + 'pin.png',
+
+                        title: markers[i][0]
+                    });
+
+                    // Allow each marker to have an info window    
+                    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                        return function() {
+                            infoWindow.setContent(infoWindowContent[i][0]);
+                            infoWindow.open(map, marker);
+                        }
+                    })(marker, i));
+
+                    // Automatically center the map fitting all markers on the screen
+                    map.fitBounds(bounds);
+                }
+
+                // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
+                var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+                    this.setZoom(14);
+                    google.maps.event.removeListener(boundsListener);
+                });
+
+            }   
+       </script>      
+          <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize"></script>
+
+          
+<!--
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+-->
+       </div>
+   </body>
+</html>

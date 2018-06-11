@@ -1,0 +1,173 @@
+*{ margin:0px; padding:0;}
+img{ border: 0; outline: none}
+a{ text-decoration: none}
+ul li { list-style: none}
+
+.main-wrapper{ border: 1px solid #d8d8d8;padding-bottom: 30px; margin-bottom: 20px;}
+.panel-group .panel {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #EEEEEE;
+}
+.panel-default > .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    color: #212121;
+    background-color: #FAFAFA;
+    border-color: #EEEEEE;
+}
+.panel-title {font-size: 14px;}
+.panel-title > a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    margin-left: 75%;
+    color: #999; text-transform: uppercase;
+    font-size: 13px;
+}
+.more-less {float: right;color: #999;}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {border-top-color: #EEEEEE;}
+.padLft{ padding-left: 0;}
+.padRgt{ padding-right: 0;}
+.findstore-panel .panel-group{ margin: 0}
+.findstore-panel{ border-bottom: 1px solid #d8d8d8; overflow: hidden;}
+.findstore-panel .panel-heading{ padding: 0}
+.findstore-panel h5{ font-weight: 500; color:#313131; font-size: 13px;}
+
+.location{ border-bottom: 1px solid #ccc; overflow: hidden; padding: 15px 0;}
+.warningIcon i{ font-size: 22px;}
+.warningIcon span{color: #7c7c7c;vertical-align: top;font-size: 13px;}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 25px solid #f4a648;
+    display: inline-block;
+}
+.arw-orange{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 25px solid #ff8f00;
+    display: inline-block;
+}
+
+.warningIcon{ position: relative}
+.warningIcon label{   
+    position: absolute;
+    top: 2px;
+    color: #fcfcfc;
+    left: 12px;
+    font-size: 11px;
+}
+
+address{ margin:10px 0 6px 0; color:#585858; font-size: 13px;}
+address h5{ font-weight: 500; color:#313131; margin-bottom: 5px; font-size: 13px;}
+.add-panel ul li{ float: left;}
+.add-panel ul li a{color: #ecb469;border-right: 1px solid #ecb469;font-weight: 600;padding: 0 10px;font-size: 13px;}
+.add-panel ul li a:first-child{ padding-left: 0;}
+.add-panel ul li a.last{ border-right: 0;padding-left: 10px;}
+.btn-black{ 
+    background: #555;
+    color: #fcfcfc;
+    border-radius: 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 49.5%;
+    margin-top: 10px;
+}
+.btn-black:hover{color: #fcfcfc}
+.btn-yellow{border-radius: 0; width: 100%;color: #fcfcfc; text-transform: uppercase; margin-top: 10px;background: #efad4d; font-size: 12px;}
+.btn-yellow:hover{ color: #fcfcfc;}
+.checkbox label, .radio label {
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+.float-wraper{ float: right}
+#gmap_canvas{width:100%;height:770px;}
+.text-white{ color: #fff;}
+.findStore input{ border:1px solid #d8d8d8;}
+.show{display:block; color: #f0ad4e;}
+.hide{ display: none; color: #333;}
+
+/*MEDIA QUERY COMMENT*/
+@media only screen and (max-width: 767px) {
+    .main-wrapper{ border: 0; padding-bottom: 0;}
+    .findstore-panel{padding-bottom: 0  }
+    .findstore-panel h5{ text-align: center; margin-bottom: 10px; font-weight: 600}
+    .padLft{ padding: 0; }
+    .panel-title > a{ padding:0; margin-left:0;}
+    .btn-black{ width: 49.3%;}
+    .mob-location{ padding: 20px 15px;}
+    .toggle-view{ padding-top: 15px;}
+    .list-icon,.toggle-view .first{ font-weight: 600;}
+    .list-map{font-weight: 600;}
+    address h5{ color: #313131;font-weight: 600;}
+    text-center{ text-align: left}
+    form .checkbox{ margin-left: 10px;}
+    .panel-list-mob, h4.panel-title{ padding-bottom: 15px;}
+    #gmap_canvas {  width: 100%; height: 500px;}
+    #gmap_canvas{ display: none; border-top: 1px solid #d8d8d8; padding-top: 10px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-wrapper{ border: 0;}
+    .padLft{ padding: 0;}
+    .panel-title > a { margin-left: 83%;}
+    .btn-black{ width: 49.7%;}
+    .mob-location{ padding: 20px 15px;}
+    .toggle-view{ padding-top: 15px;}
+    .list-icon,.toggle-view{ font-weight: 600;}
+    .float-wraper{ float: right;}
+    #gmap_canvas {  width: 100%; height: 550px;}
+}
+
+/*#headingOne .collapsed{ color: #999 !important; font-weight: normal !important; font-size: 13px !important;}*/
+.active{ color: #f0ad4e !important;}
+
+
+
+/*GOOGLE MAP COMMENTS*/
+#map_wrapper {
+    height: 730px;
+}
+#map_canvas {
+    width: 100%;
+    height: 100%;
+}
+.map-address{ width: 300px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
